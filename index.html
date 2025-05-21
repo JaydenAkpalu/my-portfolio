@@ -24,7 +24,61 @@
     </div>
   </nav>
   
-<!--Hamburger navbar-->
+  <!--Hamburger navbar-->
+  <nav id="hamburger-nav">
+    <div class="logo">Jayden Akpalu</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div> 
+      <div class="menu-links">
+        <ul>
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--Profile-->
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="https://randomuser.me/api/portraits/men/31.jpg" alt="Jayden Akpalu profile picture">
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Jayden Akpalu</h1>
+    <div class="btn-container">
+      <button class="btn btn-color-2"
+      onclick="window.open('/assets/My Resume.pdf')"
+      >
+    Download Resume
+    </button>
+    <button class="btn btn-color-1"
+      onclick="location.href = '#contact' "
+      >
+    Contact Info
+    </button>
+    </div>
+    <div id="socials-container">
+      <img class="icon" src="./assets/linkedin.png" alt="My Linkedin Profile"
+      onclick="location.href='https://linkedin.com' "
+      >
+      <img class="icon" src="./assets/github.png" alt="My Github Profile"
+      onclick="location.href='https://github.com/JaydenAkpalu' "
+      >
+      </div>
+    </div> 
+  </section>
+
+  <!--About-->
+  <section class="about"></section>
+
+
   <script src="script.js"></script>
 </body>
 </html>
